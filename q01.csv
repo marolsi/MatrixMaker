@@ -1,0 +1,87 @@
+id,475978: Can a private method be called by any other method in the same class?,1,475979: What is the key word to jump out of a method?,1,"475980: If there is a statement after a ""return"" will the statement execute?",1,475981: What does the void do in a method definition?,1,475982: Assume you type the following code into the Interactions pane and then actually choose a picture from your computer:System.out.println(new Picture(FileChooser.pickAFile()));How do you tell DrJava to show the picture that you selected?,1,"475983: The following code uses variable substitution:Picture pictureObj = new Picture(FileChooser.pickAFile());pictureObj.show();and is functionally the same as:String filename = FileChooser.pickAFile();Picture pictureObj = new Picture(filename);pictureObj.show();However, the second example is different in that it creates a variable name for the filename. What good is this?",1
+2395,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+3720,TRUE,1,public,0,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+3750,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+4263,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+9420,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+11151,TRUE,1,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+16595,TRUE,1,return,1,TRUE,0,"It does nothing, it's just a placeholder",0,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+22966,FALSE,0,jump,0,TRUE,0,"It does nothing, it's just a placeholder",0,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+24360,FALSE,0,void,0,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+24488,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+26223,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+29483,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+29506,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+29765,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+30264,TRUE,1,void,0,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,It runs slower when a String is created.,0
+30790,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+31440,TRUE,1,return,1,TRUE,0,It specifies that the method returns something,0,show();,0,"It allows us to refer to the filename later, if we need it.",1
+32372,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+33374,TRUE,1,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+34291,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"Nothing, it's just more lines of code.",0
+35192,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+35810,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+36190,TRUE,1,return,1,FALSE,1,It specifies that the method returns something,0,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+37680,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+37840,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+40319,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,It runs faster when a String is created.,0
+40423,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+41134,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+41880,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+42050,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+42481,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+42938,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+43236,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+43250,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+43422,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+43438,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+43448,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+43492,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+43566,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+43581,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"Nothing, it's just more lines of code.",0
+43718,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+44003,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+44154,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+44519,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+45264,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+45441,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+46377,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+46384,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+46436,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+46492,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,It runs faster when a String is created.,0
+46698,FALSE,0,jump,0,TRUE,0,It specifies that the method returns something,0,show();,0,"It allows us to refer to the filename later, if we need it.",1
+46915,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+47244,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+47324,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+47363,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"Nothing, it's just more lines of code.",0
+47378,FALSE,0,return,1,FALSE,1,It specifies that the method returns something,0,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+47554,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+47631,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+48072,TRUE,1,return,1,FALSE,1,It specifies that the method returns something,0,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+48567,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+48841,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+48849,FALSE,0,return,1,FALSE,1,It specifies that the method returns something,0,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+48962,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+49198,TRUE,1,return,1,TRUE,0,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,It runs faster when a String is created.,0
+50344,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+50684,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+51820,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+52458,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+52992,TRUE,1,return,1,FALSE,1,"It does nothing, it's just a placeholder",0,show();,0,"It allows us to refer to the filename later, if we need it.",1
+53151,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+53332,FALSE,0,return,1,FALSE,1,It specifies that the method returns something,0,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+54954,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+54994,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+55154,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+55631,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+56134,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+56167,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+57703,FALSE,0,void,0,TRUE,0,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+58048,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+58219,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+59055,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+59381,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,show();,0,"It allows us to refer to the filename later, if we need it.",1
+59476,FALSE,0,return,1,TRUE,0,It specifies that the method doesn't return anything,1,FileChooser.show();,0,"It allows us to refer to the filename later, if we need it.",1
+60196,FALSE,0,return,1,FALSE,1,It specifies that the method doesn't return anything,1,Picture.show();,0,"It allows us to refer to the filename later, if we need it.",1
+60727,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
+60805,TRUE,1,return,1,FALSE,1,It specifies that the method doesn't return anything,1,You can't because you haven't given the picture object a name.,1,"It allows us to refer to the filename later, if we need it.",1
