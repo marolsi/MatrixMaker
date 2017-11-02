@@ -3,52 +3,38 @@ import pandas as pd
 import numpy as np
 
 def main():
-    csv1 = loadCsvAsMatrix2('q01.csv')
-    csv2 = loadCsvAsMatrix2('q2.csv')
-    result = pd.concat([csv1, csv2], axis=1)
+    myCsvs = ['q01.csv', 'q01.csv', 'q01.csv']
+    result = loadCsvsAsMatrix(myCsvs)
     print(result)
 
-def loadCsvAsMatrix(filename):
-    with open(filename, encoding="ISO-8859-1") as infile:
+def loadCsvsAsMatrix(files):
+
+    # load first csv for reference
+    with open(files[0], encoding="ISO-8859-1") as infile:
         reader = csv.reader(infile, delimiter=',')
         myrows = [rows[0:] for rows in reader]
 
-    columns = []
-    # iterate through number of columns
-    for x in range(len(myrows[0])):
-        # iterate through rows to get xth value to yth column
-        column = []
-        for y in range(len(myrows)):
-            column.append(myrows[y][x])
-        columns.append(column)
+    data = np.array(myrows)
+    quiz = pd.DataFrame(data=data[1:, 0:],
+                         columns=data[0, 0:])
 
-    # for every array in columns
-    for x in range(1, len(columns)):
-        # iterate through array and convert
-        columns[x] = pd.get_dummies(columns[x])
+    # get list with the rest of the csvs
+    myFiles = []
+    for f in files:
+        with open(f, encoding="ISO-8859-1") as infile:
+            reader = csv.reader(infile, delimiter=',')
+            myrows = [rows[0:] for rows in reader]
+        data = np.array(myrows)
+        newFrame = pd.DataFrame(data=data[1:, 0:],
+                                columns=data[0, 0:])
+        myFiles.append(newFrame)
 
-    # separate ids
-    myids = columns[0]
-    columns.pop(0)
-    print(len(columns[0]))
-    print(len(myids))
+   # loop through list of CSVs and merge
+    for f in myFiles:
+        quiz = pd.merge(quiz, f, how='inner', on='id')
 
-    myIndices = {}
-    # prepare dictionary for indexing
-    for x in range(len(myids)):
-        myIndices[x] = myids[x]
-
-    print(myIndices)
-    # reconcatenate columns into matrix
-    # loop through every column to concatenate
-    frame = []
-    for x in range(len(columns)):
-        frame.append(columns[x])
-
-    result = pd.concat(frame, axis=1)
-    result.rename(myIndices)
-    print(result)
-    return result
+    quiz.set_index('id')
+    return quiz
 
 def mergeFiles(files):
     f1 = files[0]
