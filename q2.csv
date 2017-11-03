@@ -1,1 +1,87 @@
-ï»¿id,attempt,411485: String is one of the primitive data types.,1,"411486: What will be printed as a result of the following code being executed:Ã«_System.out.println((int)(3)/(double)(2));",1,"411487: What will be printed as a result of the following code being executed:Ã«_int myVar = 3;System.out.println(myVar);",1,"411488: What will be printed as a result of the following code being executed:Ã«_int myVar = 3;System.out.println(""myVar"");",1,411489: What datatype should you use to store a percentage?,1,411490: What datatype should you use to store a letter grade in a course?,1,411491: What datatype should you use to store a student's name?,12395,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,13720,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,int,0,String,13750,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,14263,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,19420,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,111151,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,116595,1,FALSE,1,1.5,1,3,1,3,0,int,0,char,1,String,122966,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,124360,1,FALSE,1,1.5,1,3,1,System.out.println(myVar);,0,int,0,char,1,String,124488,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,126223,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,129483,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,129506,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,129765,1,FALSE,1,3.2,0,myVar,0,3,0,double,1,char,1,String,130264,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,130790,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,131440,1,FALSE,1,1.5,1,3,1,3,0,double,1,char,1,String,132372,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,133374,1,TRUE,0,three halves,0,3,1,myVar,1,int,0,char,1,String,134291,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,135192,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,135810,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,137680,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,137840,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,140319,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,140423,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,140596,1,FALSE,1,1.5,1,3,1,myVar,1,int,0,char,1,String,141134,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,141880,1,TRUE,0,three halves,0,3,1,myVar,1,double,1,char,1,String,142050,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,142481,1,FALSE,1,3-Feb,0,3,1,myVar,1,double,1,char,1,String,142938,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,143236,1,FALSE,1,1.5,1,3,1,myVar,1,int,0,char,1,String,143250,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,143422,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,143438,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,143448,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,143492,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,143566,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,143581,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,143718,1,FALSE,1,1.5,1,int myVar,0,myVar,1,double,1,char,1,String,144003,1,TRUE,0,three halves,0,3,1,myVar,1,double,1,char,1,String,144154,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,144519,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,145264,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,145441,1,FALSE,1,1.5,1,myVar,0,3,0,double,1,char,1,String,146377,1,TRUE,0,3.2,0,System.out.println(myVar);,0,3,0,double,1,int,0,char,046384,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,146436,1,TRUE,0,three halves,0,3,1,3,0,double,1,char,1,String,146492,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,146698,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,146915,1,TRUE,0,1.5,1,myVar,0,3,0,double,1,char,1,String,147244,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,147324,1,FALSE,1,3.2,0,3,1,myVar,1,double,1,char,1,String,147363,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,147554,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,147631,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,148072,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,148274,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,148567,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,148841,1,TRUE,0,3.2,0,3,1,3,0,double,1,char,1,String,148849,1,FALSE,1,1.5,1,3,1,3,0,double,1,char,1,String,148962,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,149198,1,TRUE,0,1.5,1,System.out.println(myVar);,0,3,0,double,1,int,0,char,050344,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,150684,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,151820,1,FALSE,1,1.5,1,3,1,System.out.println(myVar);,0,double,1,char,1,String,152458,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,152614,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,153151,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,153332,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,154954,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,154994,1,FALSE,1,three halves,0,myVar,0,3,0,double,1,char,1,String,155154,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,155631,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,156134,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,156167,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,157703,1,FALSE,1,3.2,0,3,1,myVar,1,double,1,char,1,String,158048,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,158219,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,char,059055,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,159381,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,159476,1,TRUE,0,three halves,0,3,1,myVar,1,double,1,char,1,String,160196,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,160727,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,160805,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+id,attempt,411485: String is one of the primitive data types.,1,"411486: What will be printed as a result of the following code being executed:‘_System.out.println((int)(3)/(double)(2));",1,"411487: What will be printed as a result of the following code being executed:‘_int myVar = 3;System.out.println(myVar);",1,"411488: What will be printed as a result of the following code being executed:‘_int myVar = 3;System.out.println(""myVar"");",1,411489: What datatype should you use to store a percentage?,1,411490: What datatype should you use to store a letter grade in a course?,1,411491: What datatype should you use to store a student's name?,1
+2395,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+3720,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,int,0,String,1
+3750,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+4263,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+9420,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+11151,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+16595,1,FALSE,1,1.5,1,3,1,3,0,int,0,char,1,String,1
+22966,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+24360,1,FALSE,1,1.5,1,3,1,System.out.println(myVar);,0,int,0,char,1,String,1
+24488,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+26223,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+29483,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+29506,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+29765,1,FALSE,1,3.2,0,myVar,0,3,0,double,1,char,1,String,1
+30264,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+30790,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+31440,1,FALSE,1,1.5,1,3,1,3,0,double,1,char,1,String,1
+32372,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+33374,1,TRUE,0,three halves,0,3,1,myVar,1,int,0,char,1,String,1
+34291,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+35192,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+35810,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+37680,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+37840,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+40319,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+40423,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+40596,1,FALSE,1,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+41134,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+41880,1,TRUE,0,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+42050,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+42481,1,FALSE,1,3-Feb,0,3,1,myVar,1,double,1,char,1,String,1
+42938,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+43236,1,FALSE,1,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+43250,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+43422,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+43438,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+43448,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+43492,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+43566,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+43581,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+43718,1,FALSE,1,1.5,1,int myVar,0,myVar,1,double,1,char,1,String,1
+44003,1,TRUE,0,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+44154,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+44519,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+45264,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+45441,1,FALSE,1,1.5,1,myVar,0,3,0,double,1,char,1,String,1
+46377,1,TRUE,0,3.2,0,System.out.println(myVar);,0,3,0,double,1,int,0,char,0
+46384,1,FALSE,1,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+46436,1,TRUE,0,three halves,0,3,1,3,0,double,1,char,1,String,1
+46492,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+46698,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+46915,1,TRUE,0,1.5,1,myVar,0,3,0,double,1,char,1,String,1
+47244,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+47324,1,FALSE,1,3.2,0,3,1,myVar,1,double,1,char,1,String,1
+47363,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+47554,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+47631,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+48072,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+48274,1,TRUE,0,1.5,1,3,1,myVar,1,int,0,char,1,String,1
+48567,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+48841,1,TRUE,0,3.2,0,3,1,3,0,double,1,char,1,String,1
+48849,1,FALSE,1,1.5,1,3,1,3,0,double,1,char,1,String,1
+48962,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+49198,1,TRUE,0,1.5,1,System.out.println(myVar);,0,3,0,double,1,int,0,char,0
+50344,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+50684,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+51820,1,FALSE,1,1.5,1,3,1,System.out.println(myVar);,0,double,1,char,1,String,1
+52458,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+52614,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+53151,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+53332,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+54954,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+54994,1,FALSE,1,three halves,0,myVar,0,3,0,double,1,char,1,String,1
+55154,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+55631,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+56134,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+56167,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+57703,1,FALSE,1,3.2,0,3,1,myVar,1,double,1,char,1,String,1
+58048,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+58219,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,char,0
+59055,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+59381,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+59476,1,TRUE,0,three halves,0,3,1,myVar,1,double,1,char,1,String,1
+60196,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+60727,1,TRUE,0,1.5,1,3,1,myVar,1,double,1,char,1,String,1
+60805,1,FALSE,1,1.5,1,3,1,myVar,1,double,1,char,1,String,1
