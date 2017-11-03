@@ -4,10 +4,13 @@ import numpy as np
 
 def main():
     # TODO: figure out how to get CSV file that compiles properly
-    myCsvs = ['q01.csv', 'q2.csv', 'q2.csv']
-    result = loadCsvsAsMatrix(myCsvs)
+    files = ['q01.csv', 'q2.csv']
+    compiled_files = compile_csvs(files)
+    renamed_files = simplify_column_names(compiled_files)
+    matrix = encode_to_matrix(renamed_files)
+    print(matrix)
 
-def loadCsvsAsMatrix(files):
+def compile_csvs(files):
     # load first csv for reference
     with open(files[0], encoding="ISO-8859-1") as infile:
         reader = csv.reader(infile, delimiter=',')
@@ -18,56 +21,58 @@ def loadCsvsAsMatrix(files):
                          columns=data[0, 0:])
 
     # get list with the rest of the csvs
-    myFiles = []
+    my_files = []
     for x in range(1, len(files)):
         with open(files[x], encoding="ISO-8859-1") as infile:
             reader = csv.reader(infile, delimiter=',')
-            myrows = [rows[0:] for rows in reader]
+            my_rows = [rows[0:] for rows in reader]
             # transfer to data frame
-            data = np.array(myrows)
-            newFrame = pd.DataFrame(data=data[0:, 0:],
+            data = np.array(my_rows)
+            new_frame = pd.DataFrame(data=data[0:, 0:],
                                     columns=data[0, 0:])
             # add data frame to array
-            myFiles.append(newFrame)
+            my_files.append(newFrame)
 
    # loop through list of CSVs and merge
-    for f in myFiles:
+    for f in my_files:
         quiz = pd.merge(quiz, f, how='inner', on='id')
 
     # set id column as index
     quiz = quiz.set_index('id', drop=True)
-    print(quiz.shape)
 
     return quiz
 
+def simplify_column_names(df):
+    # create array of names
+    cols = list(df.columns.values)
+    new_cols = cols
+    # create new array of adjusted column names
+    for x in range(len(cols)):
+        if (cols[x][0:2] == '1_'):
+            new_cols[x] = cols[x] + '_' + str(x)
+        else:
+            new_cols[x] = cols[x].split(':')[0]
 
-def encodeMatrix(frame):
-    df = pd.get_dummies(frame, columns='1')
-    print(df)
+    # set column names to array of adjusted names
+    df.columns = new_cols
+    return df
 
-    # columns = []
-    # # iterate through number of columns
-    # for x in range(len(myrows[0])):
-    #     # iterate through rows to get xth value to yth column
-    #     column = []
-    #     for y in range(len(myrows)):
-    #         column.append(myrows[y][x])
-    #     columns.append(column)
-    #
-    # # for every array in columns
-    # for x in range(1, len(columns)):
-    #     # iterate through array and convert
-    #     columns[x] = pd.get_dummies(columns[x])
-    #
-    # print(type(columns))
-    # # reconcatenate columns into matrix
-    # # loop through every column to concatenate
-    # frame = []
-    # for x in range(len(columns)):
-    #     frame.append(columns[x])
-    # print(type(columns))
-    # result = pd.concat(frame, axis=1)
+def encode_to_matrix(df):
+    # get list of column keys to iterate through
+    my_columns = list(df.columns.values)
+    # create data frame with id indices
+    matrix = pd.DataFrame(data=[],
+                          index=df.index.values)
+    # iterate through each column and create dummy columns
+    for x in range(len(my_columns)):
+        key = my_columns[x]
+        # don't include correct/incorrect columns, because they're already binary
+        if (key[0:2] != '1_'):
+            dummiedFrame = pd.get_dummies(df[key])
+            matrix = pd.concat([matrix, dummiedFrame], axis=1)
+        else:
+            matrix = pd.concat([matrix, df[key]], axis=1)
 
-
+    return matrix
 
 main()
