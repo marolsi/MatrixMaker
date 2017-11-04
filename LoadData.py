@@ -4,6 +4,12 @@ import numpy as np
 
 
 def main():
+    # TODO: make more automatic by making a single command with the following params:
+        # directory that contains files they want to convert
+        # use_correctness, use_answer_input booleans
+        # desired filename of output
+    # code should take care of removing the names column
+
     files = ['t2', 't3', 't5', 't4', 'q1', 'q2', 'q3']
     result = convert_files_to_matrix(files, use_correctness=True, use_answer_input=True)
     saveMatrix(result, 'finishedMatrix')
