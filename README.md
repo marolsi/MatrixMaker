@@ -1,7 +1,7 @@
-#### MatrixMaker
+# MatrixMaker
 This python progam converts quizzes and tests from canvas into matrices that can be processed by machine learning algorithms.
 
-# Using MatrixMaker
+### Using MatrixMaker
 - Download quiz/tests from Canvas by selecting a quiz and exporting "student results." 
 - Open CSV and manually anonymize (remove names columns) from each quiz/test you'd like to use.
 - Create array with the names of your quiz csvs.
