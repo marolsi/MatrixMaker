@@ -47,7 +47,7 @@ def compile_csvs(files):
             # find index of 'attempt' column (could vary, based on teacher's settings)
             attempt_index = my_rows[0].index('attempt')
             for r in my_rows:
-                if (r[attempt_index] == '2'): # remove rows with second attempts
+                if r[attempt_index] == '2': # remove rows with second attempts
                     my_rows.pop(my_rows.index(r))
             # myrows is a 2d array, with each index in the array holding a row of data
             # first row contains column rows
@@ -78,9 +78,9 @@ def cleanup_csvs(df):
     for x in range(len(cols)):
         curr = cols[x]
         # make correct/incorrect columns unique
-        if ((curr[0] == '1') and (len(curr) < 4)):  # works whether name is '1' or '1_x'
+        if (curr[0] == '1') and (len(curr) < 4):  # works whether name is '1' or '1_x'
             new_cols[x] = curr + '_' + new_cols[x - 1][3:]  # append associated question id (previous column), without 'q: '
-        elif (':' in curr):
+        elif ':' in curr:
             # delete question text, leaving only question id number
             # this will still include columns we don't want, such as attempt number
             new_cols[x] = 'q: ' + curr.split(':')[0]
@@ -104,7 +104,7 @@ def encode_to_matrix(df, use_correctness, use_answer_input):
                 dummied_frame = pd.get_dummies(df[key])  # dummify into frame of multiple binary variables
                 matrix = pd.concat([matrix, dummied_frame], axis=1)
         if use_correctness:
-            if (key[0:2] == '1_'):
+            if key[0:2] == '1_':
                 matrix = pd.concat([matrix, df[key]], axis=1)  # don't dummify; already binary
     return matrix
 
