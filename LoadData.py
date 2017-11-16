@@ -11,15 +11,29 @@ def main():
     # code should take care of removing the names column
 
     files = ['t2', 't3', 't5', 't4', 'q1', 'q2', 'q3']
-    result = convert_files_to_matrix(files, use_correctness=True, use_answer_input=True)
-    saveMatrix(result, 'finishedMatrix')
-
+    matrix = convert_files_to_matrix(files, use_correctness=True, use_answer_input=False, final_grades='Fall16Grades')
+    print(matrix)
 
 def saveMatrix(matrix, filename):
     matrix.to_csv(filename + '.csv', encoding='utf-8', index=True)
 
+def addGrades(responses, gradesFilename):
+    grades = pd.DataFrame()
+    with open(gradesFilename + ".csv", encoding="ISO-8859-1") as infile:
+        reader = csv.reader(infile, delimiter=',')
+        my_rows = [rows[0:] for rows in reader]
+        data = np.array(my_rows)
+        grades = pd.DataFrame(data=data[1:, 0:],
+                                columns=data[0, 0:])
 
-def convert_files_to_matrix(files, use_correctness, use_answer_input):
+    grades.columns.values[0] = "id"  # make sure id column is named properly
+    quiz = pd.merge(responses, grades, how='inner', on='id')
+
+    return quiz
+
+
+
+def convert_files_to_matrix(files, use_correctness=True, use_answer_input=True, final_grades=None):
     """ Takes an array of CSV files, removes inconsistent IDs and converts to matrix.
 
             Requirements for CSV files:
@@ -31,13 +45,13 @@ def convert_files_to_matrix(files, use_correctness, use_answer_input):
             - whether to include actual text answers
             - whether to include right/wrong
     """
-    compiled_files = compile_csvs(files)
+    compiled_files = compile_csvs(files, grades=final_grades)
     cleaned_files = cleanup_csvs(compiled_files)
     matrix = encode_to_matrix(cleaned_files, use_correctness, use_answer_input)
     return matrix
 
 
-def compile_csvs(files):
+def compile_csvs(files, grades=None):
     # create array of data frames, one frame for each quiz
     my_files = []
     for x in range(len(files)):
@@ -64,6 +78,9 @@ def compile_csvs(files):
     for x in range(1, len(my_files)):
         my_files[x].columns.values[0] = "id"  # make sure id column is named properly
         quiz = pd.merge(quiz, my_files[x], how='inner', on='id')
+
+    if grades != None:
+        quiz = addGrades(quiz, grades)
 
     # set id column as index, simultaneously dropping id column from dataset
     quiz = quiz.set_index('id', drop=True)
@@ -106,6 +123,11 @@ def encode_to_matrix(df, use_correctness, use_answer_input):
         if use_correctness:
             if (key[0:2] == '1_'):
                 matrix = pd.concat([matrix, df[key]], axis=1)  # don't dummify; already binary
+
+    # include grades if present
+    if 'Current Score' in df.columns:
+        matrix = pd.concat([matrix, df['Current Score']], axis=1)
+
     return matrix
 
 
